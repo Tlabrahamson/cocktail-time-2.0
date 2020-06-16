@@ -54,17 +54,16 @@ class App extends Component {
   }
 
   render() {
-    const { error, isLoaded, drink } = this.state;
+    const { error, drink } = this.state;
     console.log(drink.strDrink);
     if (error) {
       return <div>Error: {error.message}</div>;
-    } else if (!isLoaded) {
-      return <div>Loading...</div>;
     } else {
       return (
         <div className="app">
           <h1>Cocktail Time 2.0</h1>
           <div className="recipieWrap">
+            <h2 className="subTitle">What'll it be?</h2>
             <div className="buttonWrap" onClick={this.handleClick}>
               Shake shake!
             </div>

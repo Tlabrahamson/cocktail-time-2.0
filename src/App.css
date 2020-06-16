@@ -15,7 +15,7 @@ h3 {
 }
 
 .app {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +29,7 @@ h3 {
     ),
     url("./images/bar.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
@@ -37,7 +37,8 @@ h3 {
   color: #fff;
   text-shadow: 2px 2px 2px #000;
   font-size: 72px;
-  margin-bottom: 0;
+  margin: 20px 0 20px 0;
+  font-family: "Caveat", cursive;
 }
 
 .recipieWrap {
@@ -46,11 +47,23 @@ h3 {
   border: solid 1px rgb(226, 208, 129);
   box-shadow: 3px 5px 8px #000;
   text-align: center;
-  padding: 50px 100px 50px 100px;
+  padding: 0 100px 50px 100px;
   width: 500px;
   max-width: 100%;
-  margin: 20px 0 20px 0;
   height: 1000px;
+  overflow: scroll;
+  margin: 20px 0 20px 0;
+}
+
+.recipieWrap:after {
+  content: "";
+  display: block;
+  height: 50px;
+  width: 100%;
+}
+
+.subTitle {
+  margin-top: 30px;
 }
 
 .buttonWrap {
@@ -61,14 +74,14 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120px;
+  height: 100px;
   width: 100%;
   cursor: pointer;
   color: #ccc;
   text-shadow: 2px 2px 2px #000;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 800;
-  margin-bottom: 50px;
+  margin: 100px 0 100px 0;
   padding-right: 60px;
   transition: all 0.4s ease;
   position: relative;
@@ -86,19 +99,19 @@ h3 {
     right: 0;
   }
   20% {
-    right: 50px;
+    right: 20px;
     left: 0;
   }
   40% {
-    left: 50px;
+    left: 20px;
     right: 0;
   }
   60% {
-    right: 50px;
+    right: 20px;
     left: 0;
   }
   80% {
-    left: 50px;
+    left: 20px;
     right: 0;
   }
   100% {
@@ -113,6 +126,7 @@ h3 {
 
 .drinkType {
   font-style: italic;
+  font-size: 18px;
 }
 
 .app img {
@@ -126,8 +140,21 @@ h3 {
   list-style: none;
   text-align: left;
   margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .instructions {
   text-align: left;
+  overflow: scroll;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .app h1 {
+    font-size: 48px;
+  }
+
+  .recipieWrap {
+    padding: 20px;
+  }
 }
