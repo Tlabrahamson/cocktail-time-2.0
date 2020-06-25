@@ -61,14 +61,14 @@ class App extends Component {
     } else {
       return (
         <div className="app">
-          <h1>Cocktail Time 2.0</h1>
+          <h1>Cocktail Time</h1>
           <div className="recipieWrap">
             <h2 className="subTitle">What'll it be?</h2>
             <div className="buttonWrap" onClick={this.handleClick}>
-              Shake shake!
+              Pour One!
             </div>
 
-            <h2>{drink.strDrink}</h2>
+            <h2 className="drinkName">{drink.strDrink}</h2>
             <p className="drinkType">
               A {drink.strCategory} best served in a {drink.strGlass}
             </p>

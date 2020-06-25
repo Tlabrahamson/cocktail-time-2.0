@@ -36,7 +36,7 @@ h3 {
 .app h1 {
   color: #fff;
   text-shadow: 2px 2px 2px #000;
-  font-size: 72px;
+  font-size: 4rem;
   margin: 20px 0 20px 0;
   font-family: "Caveat", cursive;
 }
@@ -64,6 +64,7 @@ h3 {
 
 .subTitle {
   margin-top: 30px;
+  font-size: 2.5rem;
 }
 
 .buttonWrap {
@@ -77,20 +78,24 @@ h3 {
   height: 100px;
   width: 100%;
   cursor: pointer;
-  color: #ccc;
   text-shadow: 2px 2px 2px #000;
-  font-size: 30px;
+  font-size: 1.3rem;
   font-weight: 800;
   margin: 100px 0 100px 0;
   padding-right: 60px;
   transition: all 0.4s ease;
   position: relative;
+  user-select: none;
+  color: #eee;
+  font-family: "Open Sans Condensed", sans-serif;
+  opacity: 0.8;
 }
 
 .buttonWrap:hover,
 .buttonWrap:focus {
   animation-name: shake;
   animation-duration: 2s;
+  opacity: 1;
 }
 
 @keyframes shake {
@@ -124,9 +129,17 @@ h3 {
   transform: rotate(90deg);
 }
 
+.drinkName {
+  font-size: 2rem;
+}
+
 .drinkType {
   font-style: italic;
-  font-size: 18px;
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 .app img {
@@ -140,18 +153,18 @@ h3 {
   list-style: none;
   text-align: left;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .instructions {
   text-align: left;
   overflow: scroll;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {
   .app h1 {
-    font-size: 48px;
+    font-size: 3rem;
   }
 
   .recipieWrap {
